@@ -109,7 +109,7 @@ CloseHandle
 
 ## Contributors
 * Abilash - Code 
-* Darrick, Shi Hong, Azri, Jeanie - Interfacing and wiring the Project Board, Card Reader
+* Darrick, Jeanie - Wiring of the Project Board, Card Reader
 * Temasek Polytechnic - Project Resources
 
 
