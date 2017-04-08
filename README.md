@@ -4,7 +4,7 @@ Software which can read MIFARE / FeliCa cards and also execute commands to a PIC
 A system which can be implemented in public transport (buses) or fare collection systems.
 
 ## Synopsis
-For this project, a project board which was had a PIC18F4550 MCU, LEDs, Switches, UM232R and a RS-485 Transceiver was given along with a Autostar Wiegand Card Reader. I was tasked to design an executable which will be able to read the cards from the reader and also execute commands to the project board. This is to simulate a system which can be implemented in public buses to aid in the passenger count, card value deduction and assisting the bus captain.
+For this project, a project board which had a PIC18F4550 MCU, LEDs, Switches, UM232R and a RS-485 Transceiver was given along with a Autostar Wiegand Card Reader. I was tasked to design an executable which will be able to read the cards from the reader and also execute commands to the project board. This is to simulate a system which can be implemented in public buses to aid in the passenger count, card value deduction and assisting the bus captain.
 
 This project serves as a skeleton code for any project which requires the need to serially communicate (read/write) to external peripherals through USB.
 
