@@ -107,5 +107,9 @@ CloseHandle
 
 ![4](http://i.imgur.com/rPF68pw.png)
 
+## Contributors
+* Abilash - Code 
+* Darrick, Shi Hong, Azri, Jeanie - Interfacing and wiring the Project Board, Card Reader
+* Temasek Polytechnic - Project Resources
 
 
