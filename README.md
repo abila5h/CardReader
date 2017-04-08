@@ -93,6 +93,64 @@ ReadFile
 CloseHandle
 ```
 
+### Enabling Serial Communication
+```cpp
+int ret;
+Serial_SetComport(comportval);
+Serial_SetBaudrate(19200);
+Serial_ClearBuffer();
+ret=Serial_Open();
+
+```
+### Polling for a button
+Application sends a command to the MCU to check if switch is pressed (Visual Studio)
+```cpp
+ write_buffer[0] = 0x00;
+ write_buffer[1] = 0xAB;
+ write_buffer[2] = 0x04;
+ write_buffer[3] = 0x41; //command packet to be sent to MCU
+ write_buffer[4] = 0x00;
+ write_buffer[5] = 0xFF - (0x04 + 0x41 + 0x00);
+ result3 = WriteFile(HID_Handle, write_buffer, 6, &bytes_written,0);
+ result3 = ReadFile(HID_Handle, read_buffer, 6, &bytes_read, 0); // Packets received from MCU
+ if(result3 ==0)
+	{
+	return;
+	}
+ if(result3 != 0)
+	{
+	if(read_buffer[3] == 0x55)
+	{
+		lblDoor -> Text = "Open";
+	}
+
+	}
+```
+MCU replies to the host (Firmware, MPLAB)
+```C
+if (ReceivedDataBuffer[2] == 0x41)//Received command from Host Application to poll for switch
+{         	
+        if(S2==0) // If switch is pressed
+         {
+             ToSendDataBuffer[0]=0xAB;
+             ToSendDataBuffer[1]=0x01;
+             ToSendDataBuffer[2]=0x55; //Command packet to send to PC
+             ToSendDataBuffer[3]=0x00;
+             ToSendDataBuffer[4]=0xFF -(0x01+0x55+0x00);
+         }
+         else
+         {
+             ToSendDataBuffer[0]=0xAB;
+             ToSendDataBuffer[1]=0x01;
+             ToSendDataBuffer[2]=0x00; //Command packet to send to PC
+             ToSendDataBuffer[3]=0x00;
+             ToSendDataBuffer[4]=0xFF -(0x01+0x00+0x00);
+         }
+            
+         if(!HIDTxHandleBusy(USBInHandle))
+             USBInHandle=HIDTxPacket(CUSTOM_DEVICE_HID_EP, &ToSendDataBuffer[0],5);
+}  
+```
 ### 3rd Party Card Reader's Packet Schematic
 
 ![1](http://i.imgur.com/hQxFmHV.png)
