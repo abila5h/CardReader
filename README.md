@@ -103,7 +103,7 @@ ret=Serial_Open();
 
 ```
 ### Polling for a button
-Application sends a command to the MCU to check if switch is pressed (Visual Studio)
+Application sends a command to the MCU to check if switch is pressed using USB HID function (Visual Studio)
 ```cpp
  write_buffer[0] = 0x00;
  write_buffer[1] = 0xAB;
