@@ -1,5 +1,5 @@
 # CardReader
-Software which can read MiFare / FeliCa cards and also execute commands to a PIC18F4550 MCU.
+Software which can read MIFARE / FeliCa cards and also execute commands to a PIC18F4550 MCU.
 
 A system which can be implemented in public transport (buses) or fare collection systems.
 
