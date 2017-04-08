@@ -75,7 +75,7 @@ app_device_custom_hid.c in MPLAB
 ```
 ## Code Example
 
-### The API we used for USB Communication is the Microsoft USB HID API which has these four primary functions
+### The API that is used for USB Communication is Microsoft' USB HID API which has these four functions
 
 ```
 CreateFile
