@@ -151,10 +151,6 @@ if (ReceivedDataBuffer[2] == 0x41)//Received command from Host Application to po
              USBInHandle=HIDTxPacket(CUSTOM_DEVICE_HID_EP, &ToSendDataBuffer[0],5);
 }  
 ```
-### 3rd Party Card Reader's Packet Schematic
-
-![1](http://i.imgur.com/hQxFmHV.png)
-
 ## Screenshots of the executable
 
 ![1](http://i.imgur.com/RhI9tRU.png)
