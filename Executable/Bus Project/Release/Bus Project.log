@@ -1,0 +1,42 @@
+﻿Build started 2/15/2017 2:54:24 AM.
+     1>Project "C:\Users\Abilash\Desktop\Com Int\FINAL COMINT\Final Bus Project Abi\Bus Project\Bus Project.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\Bus Project.unsuccessfulbuild".
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       CoreResGen:
+         No resources are out of date with respect to their source files. Skipping resource generation.
+       ResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Abilash\Desktop\Com Int\FINAL COMINT\Final Bus Project Abi\Release\Bus Project.exe" /INCREMENTAL:NO /NOLOGO /ASSEMBLYRESOURCE:Release\BusProject.Form1.resources /MANIFEST /ManifestFile:"Release\Bus Project.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Abilash\Desktop\Com Int\FINAL COMINT\Final Bus Project Abi\Release\Bus Project.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Release\app.res
+         Release\AssemblyInfo.obj
+         "Release\Bus Project.obj"
+         Release\stdafx.obj
+         "Release\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+     1>Bus Project.obj : error LNK2028: unresolved token (0A000011) "extern "C" int __clrcall Serial_Open(void)" (?Serial_Open@@$$J0YMHXZ) referenced in function "private: void __clrcall BusProject::Form1::btnStart_Click(class System::Object ^,class System::EventArgs ^)" (?btnStart_Click@Form1@BusProject@@$$FA$AAMXP$AAVObject@System@@P$AAVEventArgs@4@@Z)
+     1>Bus Project.obj : error LNK2028: unresolved token (0A000012) "extern "C" void __clrcall Serial_SetBaudrate(unsigned int)" (?Serial_SetBaudrate@@$$J0YMXI@Z) referenced in function "private: void __clrcall BusProject::Form1::btnStart_Click(class System::Object ^,class System::EventArgs ^)" (?btnStart_Click@Form1@BusProject@@$$FA$AAMXP$AAVObject@System@@P$AAVEventArgs@4@@Z)
+     1>Bus Project.obj : error LNK2028: unresolved token (0A000013) "extern "C" void __clrcall Serial_SetComport(unsigned char)" (?Serial_SetComport@@$$J0YMXE@Z) referenced in function "private: void __clrcall BusProject::Form1::btnStart_Click(class System::Object ^,class System::EventArgs ^)" (?btnStart_Click@Form1@BusProject@@$$FA$AAMXP$AAVObject@System@@P$AAVEventArgs@4@@Z)
+     1>Bus Project.obj : error LNK2028: unresolved token (0A000014) "extern "C" int __clrcall HID_GetHandle(unsigned int,unsigned int,unsigned long,void * *)" (?HID_GetHandle@@$$J0YMHIIKPAPAX@Z) referenced in function "private: void __clrcall BusProject::Form1::btnStart_Click(class System::Object ^,class System::EventArgs ^)" (?btnStart_Click@Form1@BusProject@@$$FA$AAMXP$AAVObject@System@@P$AAVEventArgs@4@@Z)
+     1>Bus Project.obj : error LNK2028: unresolved token (0A000017) "extern "C" void __clrcall Serial_Close(void)" (?Serial_Close@@$$J0YMXXZ) referenced in function "private: void __clrcall BusProject::Form1::btnStop_Click(class System::Object ^,class System::EventArgs ^)" (?btnStop_Click@Form1@BusProject@@$$FA$AAMXP$AAVObject@System@@P$AAVEventArgs@4@@Z)
+     1>Bus Project.obj : error LNK2028: unresolved token (0A000023) "extern "C" int __clrcall Serial_Receive(unsigned char *,unsigned int)" (?Serial_Receive@@$$J0YMHPAEI@Z) referenced in function "private: void __clrcall BusProject::Form1::timer1_Tick(class System::Object ^,class System::EventArgs ^)" (?timer1_Tick@Form1@BusProject@@$$FA$AAMXP$AAVObject@System@@P$AAVEventArgs@4@@Z)
+     1>Bus Project.obj : error LNK2028: unresolved token (0A000024) "extern "C" int __clrcall Serial_Send(unsigned char *,unsigned int)" (?Serial_Send@@$$J0YMHPAEI@Z) referenced in function "private: void __clrcall BusProject::Form1::timer1_Tick(class System::Object ^,class System::EventArgs ^)" (?timer1_Tick@Form1@BusProject@@$$FA$AAMXP$AAVObject@System@@P$AAVEventArgs@4@@Z)
+     1>Bus Project.obj : error LNK2028: unresolved token (0A000025) "extern "C" void __clrcall Serial_ClearBuffer(void)" (?Serial_ClearBuffer@@$$J0YMXXZ) referenced in function "private: void __clrcall BusProject::Form1::timer1_Tick(class System::Object ^,class System::EventArgs ^)" (?timer1_Tick@Form1@BusProject@@$$FA$AAMXP$AAVObject@System@@P$AAVEventArgs@4@@Z)
+     1>Bus Project.obj : error LNK2019: unresolved external symbol "extern "C" int __clrcall Serial_Receive(unsigned char *,unsigned int)" (?Serial_Receive@@$$J0YMHPAEI@Z) referenced in function "private: void __clrcall BusProject::Form1::timer1_Tick(class System::Object ^,class System::EventArgs ^)" (?timer1_Tick@Form1@BusProject@@$$FA$AAMXP$AAVObject@System@@P$AAVEventArgs@4@@Z)
+     1>Bus Project.obj : error LNK2019: unresolved external symbol "extern "C" int __clrcall Serial_Send(unsigned char *,unsigned int)" (?Serial_Send@@$$J0YMHPAEI@Z) referenced in function "private: void __clrcall BusProject::Form1::timer1_Tick(class System::Object ^,class System::EventArgs ^)" (?timer1_Tick@Form1@BusProject@@$$FA$AAMXP$AAVObject@System@@P$AAVEventArgs@4@@Z)
+     1>Bus Project.obj : error LNK2019: unresolved external symbol "extern "C" void __clrcall Serial_ClearBuffer(void)" (?Serial_ClearBuffer@@$$J0YMXXZ) referenced in function "private: void __clrcall BusProject::Form1::timer1_Tick(class System::Object ^,class System::EventArgs ^)" (?timer1_Tick@Form1@BusProject@@$$FA$AAMXP$AAVObject@System@@P$AAVEventArgs@4@@Z)
+     1>Bus Project.obj : error LNK2019: unresolved external symbol "extern "C" void __clrcall Serial_Close(void)" (?Serial_Close@@$$J0YMXXZ) referenced in function "private: void __clrcall BusProject::Form1::btnStop_Click(class System::Object ^,class System::EventArgs ^)" (?btnStop_Click@Form1@BusProject@@$$FA$AAMXP$AAVObject@System@@P$AAVEventArgs@4@@Z)
+     1>Bus Project.obj : error LNK2019: unresolved external symbol "extern "C" int __clrcall Serial_Open(void)" (?Serial_Open@@$$J0YMHXZ) referenced in function "private: void __clrcall BusProject::Form1::btnStart_Click(class System::Object ^,class System::EventArgs ^)" (?btnStart_Click@Form1@BusProject@@$$FA$AAMXP$AAVObject@System@@P$AAVEventArgs@4@@Z)
+     1>Bus Project.obj : error LNK2019: unresolved external symbol "extern "C" void __clrcall Serial_SetBaudrate(unsigned int)" (?Serial_SetBaudrate@@$$J0YMXI@Z) referenced in function "private: void __clrcall BusProject::Form1::btnStart_Click(class System::Object ^,class System::EventArgs ^)" (?btnStart_Click@Form1@BusProject@@$$FA$AAMXP$AAVObject@System@@P$AAVEventArgs@4@@Z)
+     1>Bus Project.obj : error LNK2019: unresolved external symbol "extern "C" void __clrcall Serial_SetComport(unsigned char)" (?Serial_SetComport@@$$J0YMXE@Z) referenced in function "private: void __clrcall BusProject::Form1::btnStart_Click(class System::Object ^,class System::EventArgs ^)" (?btnStart_Click@Form1@BusProject@@$$FA$AAMXP$AAVObject@System@@P$AAVEventArgs@4@@Z)
+     1>Bus Project.obj : error LNK2019: unresolved external symbol "extern "C" int __clrcall HID_GetHandle(unsigned int,unsigned int,unsigned long,void * *)" (?HID_GetHandle@@$$J0YMHIIKPAPAX@Z) referenced in function "private: void __clrcall BusProject::Form1::btnStart_Click(class System::Object ^,class System::EventArgs ^)" (?btnStart_Click@Form1@BusProject@@$$FA$AAMXP$AAVObject@System@@P$AAVEventArgs@4@@Z)
+     1>C:\Users\Abilash\Desktop\Com Int\FINAL COMINT\Final Bus Project Abi\Release\Bus Project.exe : fatal error LNK1120: 16 unresolved externals
+     1>Done Building Project "C:\Users\Abilash\Desktop\Com Int\FINAL COMINT\Final Bus Project Abi\Bus Project\Bus Project.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.16
