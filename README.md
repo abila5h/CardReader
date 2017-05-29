@@ -166,8 +166,7 @@ if (ReceivedDataBuffer[2] == 0x41)//Received command from Host Application to po
 ![4](http://i.imgur.com/rPF68pw.png)
 
 ## Contributors
-* Abilash - Code 
-* Darrick, Jeanie - Wiring of the Project Board, Card Reader
+* Abilash - Code and Documentation
 * Temasek Polytechnic - Project Resources
 
 
