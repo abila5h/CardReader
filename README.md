@@ -8,8 +8,6 @@ For this project, a project board which had a PIC18F4550 MCU, LEDs, Switches, UM
 
 This project serves as a skeleton code for any project which requires the need to serially communicate (read/write) to external peripherals through USB.
 
-This is the final project of Computer Interfacing, a subject in my institution, Temasek Polytechnic
-
 
 ## Project Functionalities
 * Detecting MiFare / Felica Card along with the Unique Card ID
@@ -167,6 +165,5 @@ if (ReceivedDataBuffer[2] == 0x41)//Received command from Host Application to po
 
 ## Contributors
 * Abilash - Code and Documentation
-* Temasek Polytechnic - Project Resources
 
 
